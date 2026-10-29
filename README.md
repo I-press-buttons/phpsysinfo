@@ -125,3 +125,8 @@ LICENSING
 
 This program is released under the GNU Public License Version 2 or 
 (at your option) any later version, see [COPYING](COPYING) for details.
+
+
+## Security updates (October 2026)
+
+Rebuild and recreate the container to adopt PHP 8.2.35 with Apache. The image installs mbstring and serves this checkout at `/phpsysinfo/`; it no longer clones an unrelated upstream HEAD. Review persistent configuration mounts when replacing a container. Non-Docker deployments need PHP 8.2.35+, 8.3.36+, 8.4.27+ or 8.5.12+ in the corresponding branch.
